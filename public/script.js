@@ -39,13 +39,13 @@ document.getElementById('messageForm').addEventListener('submit', function (e) {
         },
         body: JSON.stringify({ recipient, message })
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        saveToSent(recipient, message); // Save to sent messages
-        fetchInbox(); // Fetch updated inbox
-    })
-    .catch(error => console.error('Error:', error));
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            saveToSent(recipient, message); // Save to sent messages
+            fetchInbox(); // Fetch updated inbox
+        })
+        .catch(error => console.error('Error:', error));
 
     document.getElementById('messageForm').reset(); // Clear the form
     alert("Message sent!");
@@ -86,4 +86,3 @@ function displaySentMessages() {
         sentDiv.appendChild(messageDiv);
     });
 }
-

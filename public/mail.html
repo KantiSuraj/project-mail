@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Navbar -->
+    <div class="topbar">
+        <h1>MAIL</h1>
+    </div>
+
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <button id="composeBtn">Compose</button>
+            <ul>
+                <li id="inboxBtn">Inbox</li>
+                <li id="sentBtn">Sent</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Compose Form (Hidden by default) -->
+            <div id="composeSection" class="hidden">
+                <h2>Compose</h2>
+                <form id="messageForm">
+                    <input type="text" id="recipient" placeholder="Recipient" required>
+                    <textarea id="message" placeholder="Type your message..." required></textarea>
+                    <button type="submit" id="sendBtn">Send</button>
+                </form>
+            </div>
+
+            <!-- Inbox Section -->
+            <div id="inboxSection">
+                <h2>Inbox</h2>
+                <div id="inboxMessages" class="email-list">
+                    <!-- Emails will be displayed here -->
+                </div>
+            </div>
+
+            <!-- Sent Section -->
+            <div id="sentSection" class="hidden">
+                <h2>Sent Messages</h2>
+                <div id="sentMessages" class="email-list">
+                    <!-- Sent emails will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
