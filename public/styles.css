@@ -17,15 +17,9 @@
     margin: 0 auto;
 }
 
-#xx {
-    background-color: #ff9900;
-    border-radius: 5px;
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 5px 15px;
+.m{
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .header {
@@ -35,6 +29,7 @@
     text-align: left;
     width: 100%;
     font-size: 18px;
+    color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -42,7 +37,12 @@
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
+}
+
+.r{
+    color: #ff9900;
 }
 
 .header h1 {
@@ -136,9 +136,10 @@
 
 #emailForm input, #emailForm textarea {
     display: block;
-    width: 100%;
+    width: 90%;
     padding: 10px;
     margin-bottom: 15px;
+    margin-right: 50px;
     border: 1px solid #444444; 
     background-color: #333333; 
     color: #ffffff; 
@@ -172,14 +173,14 @@ li.received {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1c1c1c;
+    background-color: black;
 }
 .login-container {
     width: 300px;
     margin: 100px auto;
     padding: 20px;
     padding-bottom: 30px;
-    background-color:#f0f0f0;
+    background-color:#1c1c1c;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -187,13 +188,16 @@ li.received {
 .login-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: white;
 }
 
 .login-container input {
     width: calc(100% - 22px);
     padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #444444; 
+    background-color: #333333; 
+    color: white;
     border-radius: 4px;
     font-size: 16px;
     transition: border-color 0.3s ease;
@@ -208,8 +212,9 @@ li.received {
 .login-container button {
     width: 100%;
     padding: 10px;
-    background-color: #4285F4;
-    color: white;
+    background-color: #ff9900;
+    color: black;
+    font-weight: 600;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -217,5 +222,5 @@ li.received {
 }
 
 .login-container button:hover {
-    background-color: #3367d6;
+    background-color: #cc7a00;
 }

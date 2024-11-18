@@ -28,13 +28,10 @@
             const email = emailInput.value;
             const password = passwordInput.value;
 
-            // Store email in localStorage
             localStorage.setItem('email', email);
 
-            // Emit login event to server (if needed)
             socket.emit('login', { email, password });
 
-            // Redirect to email page
             window.location.href = '/email.html';
         });
     </script>

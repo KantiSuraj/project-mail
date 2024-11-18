@@ -1,16 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="email-body">
     <header class="header">
-        <div id ="xx">
-        <h1>MAIL</h1>
-        </div>
+        <h1><span class="r">RTC</span>MAIL</h1>
+        <h2 class="m"></h2>
     </header>
 
     <div class="container">
@@ -19,9 +15,9 @@
             <div class="menu">
                 <button class="menu-item" onclick="showInbox()">Inbox</button>
                 <button class="menu-item" onclick="showSent()">Sent</button>
+                <button class="menu-item" onclick="showPromotion()">Promotions</button>
             </div>
         </aside>
-
         <main class="main-content">
             <div id="composeSection" class="section" style="display: none;">
                 <h2>Compose Email</h2>
@@ -41,6 +37,10 @@
             <div id="sentSection" class="section" style="display: none;">
                 <h2>Sent Emails</h2>
                 <ul id="sentList"></ul>
+            </div>
+            <div id="promotionSection" class="section" style="display: none;">
+                <h2>Promotional Emails</h2>
+                <ul id="promotionList"></ul>
             </div>
         </main>
     </div>
